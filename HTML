@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interstellar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <video id="background-video" autoplay loop muted poster="VideoFundo.mp4">
+        <source src="VideoFundo.mp4" type="video/mp4">
+    </video>
+    
+      
+    <audio id="bg-music" src="maintheme.mp3" loop></audio>
+    <button id="toggle-btn">Pausar</button>
+
+    <script>
+        const music = document.getElementById('bg-music');
+        const toggleBtn = document.getElementById('toggle-btn');
+
+        toggleBtn.addEventListener('click', function() {
+            if (music.paused) {
+                music.play();
+                toggleBtn.textContent = 'Pausar';
+            } else {
+                music.pause();
+                toggleBtn.textContent = 'Reproduzir';
+            }
+        });
+    </script>
+    
+      
+ 
+    <section class="container">
+        <header class="header">
+            <img src="capa.jpg" alt="Interstellar capa">
+            <section class="title">Interstellar</section>
+        </header>
+        <section class="info">
+            <h1>Interstellar (2014)</h1>
+            <p>Um grupo de exploradores utiliza um buraco de minhoca recém-descoberto para superar as limitações das viagens espaciais humanas e conquistar as vastas distâncias envolvidas em uma viagem interestelar.</p>
+            <section class="details">
+                <span>
+                    <strong>Duração:</strong> 169 min
+                    <br>
+                    <strong>Diretor:</strong> Christopher Nolan
+                    <br>
+                    <strong>Elenco:</strong> Matthew McConaughey, Anne Hathaway, Jessica Chastain
+                </span>
+                <ul>
+                    <li>Ação & Aventura</li>
+                    <li>Sci-Fi & Fantasia</li>
+                    <li>Mistério & Suspense</li>
+                </ul>
+            </section>
+            <h1>Elenco:</h1>
+
+            <section class="menu" id="menu">
+                <ul>
+                    <li><a href="#PCooper">Cooper</a></li>
+                    <li><a href="#PAmelia">Amelia Brand</a></li>
+                    <li><a href="#PMurphy">Murphy Cooper</a></li>
+                    <li><a href="#PJohn">John Brand</a></li>
+                    <li><a href="#PTom">Tom Cooper</a></li>     
+                </ul>
+            </section>
+
+            <section class="elenco">
+                <section class="personagem" id="PCooper">
+                    <br><br><strong>Cooper</strong> (Matthew McConaughey):<br><br>
+                    <span class="descricao">
+                        <img src="cooper.jpg" alt="Foto Cooper">
+                        <br>Cooper é o personagem principal do filme, interpretado por Matthew McConaughey. Ele é um ex-piloto da NASA que se tornou fazendeiro em um futuro distópico, onde a Terra enfrenta uma crise ambiental. Ele é recrutado para liderar uma expedição espacial em busca de um novo lar para a humanidade, embarcando em uma jornada emocionante através de buracos de minhoca e dimensões desconhecidas. Ao longo da viagem, Cooper enfrenta desafios pessoais e científicos, lutando para equilibrar sua dedicação à missão com seu amor pela família.
+                        <br>
+                    </span>
+                </section>
+                <section class="personagem" id="PAmelia">
+                    <strong>Amelia Brand</strong> (Anne Hathaway):<br><br>
+                    <span class="descricao">
+                        <img src="amelia.jpg" alt="Foto Amelia">
+                        <br>Amelia Brand é uma cientista brilhante e determinada, interpretada por Anne Hathaway. Ela se junta à expedição espacial liderada por Cooper em busca de um novo lar para a humanidade. Amelia carrega consigo suas próprias esperanças e convicções, enfrentando os desafios do espaço enquanto lida com questões pessoais e emocionais. Sua fé na humanidade e na possibilidade de encontrar um novo lar a impulsiona através das adversidades da jornada.
+                        <br>
+                    </span>
+                </section>
+                <section class="personagem" id="PMurphy">
+                    <strong>Murphy Cooper</strong> (Jessica Chastain):<br><br>
+                    <span class="descricao">
+                        <img src="murphy.jpg" alt="Foto Murphy">
+                        <br>Murphy, interpretada por Jessica Chastain, é uma personagem complexa e resiliente em "Interstellar". Ela é filha de Cooper e desempenha um papel significativo na trama do filme. Murphy é uma cientista brilhante por conta própria, profundamente comprometida com a missão de salvar a humanidade. Sua jornada pessoal é marcada por desafios emocionais e científicos, enquanto ela busca compreender e superar os mistérios do universo. Ao longo do filme, Murphy demonstra coragem, determinação e amor inabalável por sua família.
+                        <br>
+                    </span>
+                </section>
+                <section class="personagem" id="PJohn">
+                    <strong>John Brand</strong> (Michael Caine):<br><br>
+                    <span class="descricao">
+                        <img src="brand.jpg" alt="Foto Dr.Brand">
+                        <br>John Brand é um renomado cientista e pesquisador, interpretado por Michael Caine. Ele é um dos principais arquitetos da missão espacial em "Interstellar", liderando os esforços para encontrar um novo lar para a humanidade. Como pai de Amelia Brand, John também é motivado por um profundo senso de dever e amor por sua filha. Ao longo do filme, ele desempenha um papel crucial na busca pela salvação da humanidade, enfrentando desafios científicos e morais ao longo do caminho.
+                        <br>
+                    </span>
+                </section>
+                <section class="personagem" id="PTom">
+                    <strong>Tom Cooper</strong> (Casey Affleck):<br><br>
+                    <span class="descricao">
+                        <img src="tom.png" alt="Foto tom">
+                        <br>Tom é um personagem importante em "Interstellar", interpretado por Casey Affleck. Ele é o filho mais velho de Cooper e tem um forte vínculo com sua irmã, Murphy. Tom é um fazendeiro dedicado que permanece na Terra enquanto seu pai parte em uma expedição espacial. Ao longo do filme, ele enfrenta desafios relacionados à sobrevivência em um mundo cada vez mais hostil, enquanto lida com a ausência de seu pai e a incerteza sobre o futuro da humanidade.
+                        <br>
+                    </span>
+                </section>
+            </section>
+            <section class="menu2">
+                <ul>
+                    <a href="#menu">Voltar ao Menu</a>
+                </ul>
+            </section>
+            <h1>Trailer:</h1>
+            <video src="trailer.mp4" height="800px" controls ></video> 
+            <footer>
+                <h3>Designed by Ighor Alexandre (2024)</h3>
+            </footer>
+            
+        </section>
+    </section>
+
+</body>
+</html>
